@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
+    
     public partial class Form6 : Form
     {
-        DataSet ds = new DataSet(); //진료의사 및 담당자, 진료여부를 저장할 DataSet
+        public List<string> _listname = new List<string>();
         public Form6()
         {
             InitializeComponent();
@@ -30,7 +31,8 @@ namespace WindowsFormsApp2
 
         private void ListBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            string curItem = listBox_state.SelectedItem.ToString();
+            label_RoomstateBefore.Text = curItem;
         }
 
         private void TableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -80,12 +82,29 @@ namespace WindowsFormsApp2
 
         private void Ch_save_Click(object sender, EventArgs e)
         {
-            DataTable dt = null;
 
-            dt = new DataTable("doctorList");
+          // if(label_doctor.Text!=null || textBox_charger.Text!= null || label_RoomstateBefore !=null)
+         if(label_doctor.Text!=null)
+            {
+                LabeldoctorNow.Text = label_doctor.Text;
+            }
+         if(textBox_charger.Text != null)
+            {
+                label_charger.Text = textBox_charger.Text;
+            }
+         if (label_RoomstateBefore.Text != null)
+            {
+                label_RoomstateNow.Text = label_RoomstateBefore.Text;
+            }
+    
+        }
 
-            DataColumn colName = new DataColumn("Name", typeof(string));
-            
+        private void List_name_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string curItem = null;
+            if (list_name.SelectedItem.ToString() != null)
+            curItem = list_name.SelectedItem.ToString(); 
+            label_doctor.Text = curItem;
         }
     }
 }

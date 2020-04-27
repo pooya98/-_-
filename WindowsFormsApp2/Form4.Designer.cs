@@ -34,13 +34,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pmExit = new System.Windows.Forms.Button();
-            this.pmInquiry = new System.Windows.Forms.Button();
-            this.pmInsert = new System.Windows.Forms.Button();
-            this.pmDelete = new System.Windows.Forms.Button();
-            this.pmSave = new System.Windows.Forms.Button();
-            this.pmAutoDn = new System.Windows.Forms.Button();
             this.pmDb = new System.Windows.Forms.Button();
+            this.pmAutoDn = new System.Windows.Forms.Button();
+            this.pmSave = new System.Windows.Forms.Button();
+            this.pmDelete = new System.Windows.Forms.Button();
+            this.pmInsert = new System.Windows.Forms.Button();
+            this.pmInquiry = new System.Windows.Forms.Button();
+            this.pmExit = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.CK = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ExeProgramName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,55 +65,15 @@
             this.panel1.Size = new System.Drawing.Size(1029, 47);
             this.panel1.TabIndex = 0;
             // 
-            // pmExit
+            // pmDb
             // 
-            this.pmExit.Font = new System.Drawing.Font("나눔고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.pmExit.Location = new System.Drawing.Point(3, 3);
-            this.pmExit.Name = "pmExit";
-            this.pmExit.Size = new System.Drawing.Size(99, 40);
-            this.pmExit.TabIndex = 0;
-            this.pmExit.Text = "Exit";
-            this.pmExit.UseVisualStyleBackColor = true;
-            // 
-            // pmInquiry
-            // 
-            this.pmInquiry.Font = new System.Drawing.Font("나눔고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.pmInquiry.Location = new System.Drawing.Point(108, 3);
-            this.pmInquiry.Name = "pmInquiry";
-            this.pmInquiry.Size = new System.Drawing.Size(124, 40);
-            this.pmInquiry.TabIndex = 1;
-            this.pmInquiry.Text = "조회 ( S )";
-            this.pmInquiry.UseVisualStyleBackColor = true;
-            // 
-            // pmInsert
-            // 
-            this.pmInsert.Font = new System.Drawing.Font("나눔고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.pmInsert.Location = new System.Drawing.Point(238, 3);
-            this.pmInsert.Name = "pmInsert";
-            this.pmInsert.Size = new System.Drawing.Size(83, 40);
-            this.pmInsert.TabIndex = 2;
-            this.pmInsert.Text = "삽입 ( I )";
-            this.pmInsert.UseVisualStyleBackColor = true;
-            // 
-            // pmDelete
-            // 
-            this.pmDelete.Font = new System.Drawing.Font("나눔고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.pmDelete.Location = new System.Drawing.Point(327, 3);
-            this.pmDelete.Name = "pmDelete";
-            this.pmDelete.Size = new System.Drawing.Size(83, 40);
-            this.pmDelete.TabIndex = 3;
-            this.pmDelete.Text = "삭제 ( D )";
-            this.pmDelete.UseVisualStyleBackColor = true;
-            // 
-            // pmSave
-            // 
-            this.pmSave.Font = new System.Drawing.Font("나눔고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.pmSave.Location = new System.Drawing.Point(416, 3);
-            this.pmSave.Name = "pmSave";
-            this.pmSave.Size = new System.Drawing.Size(131, 40);
-            this.pmSave.TabIndex = 4;
-            this.pmSave.Text = "저장 ( S )";
-            this.pmSave.UseVisualStyleBackColor = true;
+            this.pmDb.Font = new System.Drawing.Font("나눔고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.pmDb.Location = new System.Drawing.Point(985, 3);
+            this.pmDb.Name = "pmDb";
+            this.pmDb.Size = new System.Drawing.Size(41, 40);
+            this.pmDb.TabIndex = 6;
+            this.pmDb.Text = "Db";
+            this.pmDb.UseVisualStyleBackColor = true;
             // 
             // pmAutoDn
             // 
@@ -125,15 +85,59 @@
             this.pmAutoDn.Text = "Auto Dn";
             this.pmAutoDn.UseVisualStyleBackColor = true;
             // 
-            // pmDb
+            // pmSave
             // 
-            this.pmDb.Font = new System.Drawing.Font("나눔고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.pmDb.Location = new System.Drawing.Point(985, 3);
-            this.pmDb.Name = "pmDb";
-            this.pmDb.Size = new System.Drawing.Size(41, 40);
-            this.pmDb.TabIndex = 6;
-            this.pmDb.Text = "Db";
-            this.pmDb.UseVisualStyleBackColor = true;
+            this.pmSave.Font = new System.Drawing.Font("나눔고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.pmSave.Location = new System.Drawing.Point(416, 3);
+            this.pmSave.Name = "pmSave";
+            this.pmSave.Size = new System.Drawing.Size(131, 40);
+            this.pmSave.TabIndex = 4;
+            this.pmSave.Text = "저장 ( S )";
+            this.pmSave.UseVisualStyleBackColor = true;
+            this.pmSave.Click += new System.EventHandler(this.PmSave_Click);
+            // 
+            // pmDelete
+            // 
+            this.pmDelete.Font = new System.Drawing.Font("나눔고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.pmDelete.Location = new System.Drawing.Point(327, 3);
+            this.pmDelete.Name = "pmDelete";
+            this.pmDelete.Size = new System.Drawing.Size(83, 40);
+            this.pmDelete.TabIndex = 3;
+            this.pmDelete.Text = "삭제 ( D )";
+            this.pmDelete.UseVisualStyleBackColor = true;
+            this.pmDelete.Click += new System.EventHandler(this.PmDelete_Click);
+            // 
+            // pmInsert
+            // 
+            this.pmInsert.Font = new System.Drawing.Font("나눔고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.pmInsert.Location = new System.Drawing.Point(238, 3);
+            this.pmInsert.Name = "pmInsert";
+            this.pmInsert.Size = new System.Drawing.Size(83, 40);
+            this.pmInsert.TabIndex = 2;
+            this.pmInsert.Text = "삽입 ( I )";
+            this.pmInsert.UseVisualStyleBackColor = true;
+            this.pmInsert.Click += new System.EventHandler(this.PmInsert_Click);
+            // 
+            // pmInquiry
+            // 
+            this.pmInquiry.Font = new System.Drawing.Font("나눔고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.pmInquiry.Location = new System.Drawing.Point(108, 3);
+            this.pmInquiry.Name = "pmInquiry";
+            this.pmInquiry.Size = new System.Drawing.Size(124, 40);
+            this.pmInquiry.TabIndex = 1;
+            this.pmInquiry.Text = "조회 ( S )";
+            this.pmInquiry.UseVisualStyleBackColor = true;
+            this.pmInquiry.Click += new System.EventHandler(this.PmInquiry_Click);
+            // 
+            // pmExit
+            // 
+            this.pmExit.Font = new System.Drawing.Font("나눔고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.pmExit.Location = new System.Drawing.Point(3, 3);
+            this.pmExit.Name = "pmExit";
+            this.pmExit.Size = new System.Drawing.Size(99, 40);
+            this.pmExit.TabIndex = 0;
+            this.pmExit.Text = "Exit";
+            this.pmExit.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -159,6 +163,7 @@
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(1026, 425);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // CK
             // 
@@ -205,14 +210,14 @@
             this.PMetc.Name = "PMetc";
             this.PMetc.Width = 300;
             // 
-            // Form1
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1034, 479);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "Form4";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
